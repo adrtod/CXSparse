@@ -24,15 +24,11 @@ clean:
 	( cd Lib ; $(MAKE) clean )
 	( cd Demo ; $(MAKE) clean )
 	( cd Tcov ; $(MAKE) clean )
-	( cd MATLAB/CSparse ; $(RM) *.o cs_cl_*.c )
-	( cd MATLAB/Test    ; $(RM) *.o cs_cl_*.c )
 
 purge:
 	( cd Lib ; $(MAKE) purge )
 	( cd Demo ; $(MAKE) purge )
 	( cd Tcov ; $(MAKE) purge )
-	( cd MATLAB/CSparse ; $(RM) *.o cs_cl_*.c *.mex* )
-	( cd MATLAB/Test    ; $(RM) *.o cs_cl_*.c *.mex* )
 
 distclean: purge
 
